@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
-        android:textColor="@android:color/holo_red_dark"
+        android:textColor="@color/colorRed"
         android:textSize="36sp" />
 
     <TableLayout
@@ -76,10 +76,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/colorAccent"
         android:onClick="startGame"
         android:text="@string/start"
-        android:textColor="@android:color/black" />
+        android:textColor="@color/colorBlack" />
 
 
 </LinearLayout>
