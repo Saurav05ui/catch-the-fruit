@@ -30,7 +30,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="130dp"
             android:text="Tap to Start"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/colorRed"
             android:textSize="30sp" />
 
         <ImageView
@@ -49,7 +49,7 @@
         <ImageView
             android:id="@+id/bullet"
             android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_height="39dp"
             android:src="@drawable/bullet" />
 
         <ImageView
