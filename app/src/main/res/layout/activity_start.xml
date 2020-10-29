@@ -31,7 +31,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="10dp"
-                android:text="30 point"
+                android:paddingRight="10dp"
+                android:text="@string/_30_point"
                 android:textColor="@color/colorPrimary"
                 android:textSize="18sp" />
         </TableRow>
@@ -49,7 +50,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="10dp"
-                android:text="10 point"
+                android:paddingRight="10dp"
+                android:text="@string/_10_point"
                 android:textColor="@color/colorPrimary"
                 android:textSize="18sp" />
         </TableRow>
@@ -67,7 +69,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="10dp"
-                android:text="Game Over"
+                android:paddingRight="10dp"
+                android:text="@string/game_over"
                 android:textColor="@color/colorPrimary"
                 android:textSize="18sp" />
         </TableRow>
