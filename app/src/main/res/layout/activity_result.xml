@@ -14,7 +14,8 @@
         android:layout_height="wrap_content"
         android:text="@string/game_over"
         android:textColor="@color/colorRed"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/scoreLabel"
@@ -23,7 +24,8 @@
         android:layout_marginTop="80dp"
         android:text="@string/_150"
         android:textColor="@color/colorAccent"
-        android:textSize="40sp" />
+        android:textSize="40sp"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/highScoreLabel"
@@ -32,7 +34,8 @@
         android:layout_marginTop="80dp"
         android:text="@string/high_score_300"
         android:textColor="@color/colorRed"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textStyle="bold"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -42,6 +45,7 @@
         android:onClick="tryAgain"
         android:text="@string/try_again"
         android:textAllCaps="false"
-        android:textColor="@android:color/black" />
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
 
 </LinearLayout>
