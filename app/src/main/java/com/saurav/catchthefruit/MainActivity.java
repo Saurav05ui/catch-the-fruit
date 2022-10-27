@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     private int score = 0;
 
     // Initialize Class
-    private Handler handler = new Handler();
+    private final Handler handler = new Handler();
     private Timer timer = new Timer();
     private SoundPlayer sound;
 
@@ -70,12 +70,12 @@ public class MainActivity extends AppCompatActivity {
 
         sound = new SoundPlayer(this);
 
-        scoreLabel = (TextView) findViewById(R.id.scoreLabel);
-        startLabel = (TextView) findViewById(R.id.startLabel);
-        bird = (ImageView) findViewById(R.id.bird);
-        orange = (ImageView) findViewById(R.id.orange);
-        pink = (ImageView) findViewById(R.id.pink);
-        bullet = (ImageView) findViewById(R.id.bullet);
+        scoreLabel = findViewById(R.id.scoreLabel);
+        startLabel = findViewById(R.id.startLabel);
+        bird = findViewById(R.id.bird);
+        orange = findViewById(R.id.orange);
+        pink = findViewById(R.id.pink);
+        bullet = findViewById(R.id.bullet);
 
 
         // Get screen size.
@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
         bullet.setX(-70);
         bullet.setY(-70);
 
-        scoreLabel.setText("Score : 0");
+        scoreLabel.setText(R.string.score_0);
 
 
     }
@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Move bird
-        if (action_flg == true) {
+        if (action_flg) {
             // Touching
             birdY -= birdSpeed;
 
@@ -230,7 +230,7 @@ public class MainActivity extends AppCompatActivity {
 
     public boolean onTouchEvent(MotionEvent me) {
 
-        if (start_flg == false) {
+        if (!start_flg) {
 
             start_flg = true;
 
@@ -278,9 +278,8 @@ public class MainActivity extends AppCompatActivity {
     public boolean dispatchKeyEvent(KeyEvent event) {
 
         if (event.getAction() == KeyEvent.ACTION_DOWN) {
-            switch (event.getKeyCode()) {
-                case KeyEvent.KEYCODE_BACK:
-                    return true;
+            if (event.getKeyCode() == KeyEvent.KEYCODE_BACK) {
+                return true;
             }
         }
 
