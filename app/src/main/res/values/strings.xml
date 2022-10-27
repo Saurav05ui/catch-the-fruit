@@ -10,4 +10,5 @@
     <string name="score_0">Score : 0</string>
     <string name="high_score">\"High Score : \"</string>
     <string name="score">\"Score : \"</string>
+    <string name="tap_to_start">Tap to Start</string>
 </resources>

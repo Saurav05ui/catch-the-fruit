@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/scoreLabel"
@@ -29,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="130dp"
-            android:text="Tap to Start"
+            android:text="@string/tap_to_start"
             android:textColor="@color/colorRed"
             android:textSize="30sp"
             android:textStyle="bold"/>
@@ -39,7 +37,8 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_gravity="center_vertical"
-            android:src="@drawable/bird" />
+            android:src="@drawable/bird"
+            android:contentDescription="@null" />
 
         <ImageView
             android:id="@+id/orange"
