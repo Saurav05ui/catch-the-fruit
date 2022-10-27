@@ -29,7 +29,7 @@ public class Result extends AppCompatActivity {
         int highScore = settings.getInt("HIGH_SCORE", 0);
 
         if (score > highScore) {
-            highScoreLabel.setText("High Score : " + score);
+            highScoreLabel.setText(getString(R.string.high_score) + score);
 
             // Update High Score
             SharedPreferences.Editor editor = settings.edit();
@@ -37,7 +37,7 @@ public class Result extends AppCompatActivity {
             editor.commit();
 
         } else {
-            highScoreLabel.setText("High Score : " + highScore);
+            highScoreLabel.setText(getString(R.string.high_score) + highScore);
 
         }
 
@@ -54,9 +54,8 @@ public class Result extends AppCompatActivity {
     public boolean dispatchKeyEvent(KeyEvent event) {
 
         if (event.getAction() == KeyEvent.ACTION_DOWN) {
-            switch (event.getKeyCode()) {
-                case KeyEvent.KEYCODE_BACK:
-                    return true;
+            if (event.getKeyCode() == KeyEvent.KEYCODE_BACK) {
+                return true;
             }
         }
 
