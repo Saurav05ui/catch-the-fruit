@@ -19,8 +19,8 @@ public class Result extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
-        TextView scoreLabel = (TextView) findViewById(R.id.scoreLabel);
-        TextView highScoreLabel = (TextView) findViewById(R.id.highScoreLabel);
+        TextView scoreLabel = findViewById(R.id.scoreLabel);
+        TextView highScoreLabel = findViewById(R.id.highScoreLabel);
 
         int score = getIntent().getIntExtra("SCORE", 0);
         scoreLabel.setText(score + "");
