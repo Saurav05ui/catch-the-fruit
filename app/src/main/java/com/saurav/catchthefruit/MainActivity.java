@@ -167,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
 
         bird.setY(birdY);
 
-        scoreLabel.setText("Score : " + score);
+        scoreLabel.setText(getString(R.string.score) + score);
 
     }
 
